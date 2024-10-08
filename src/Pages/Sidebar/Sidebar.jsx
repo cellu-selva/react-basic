@@ -18,18 +18,18 @@ const Sidebar = () => {
                 </NavLink>
             </li>
             <li className='menu-item'>
-                <NavLink to="">
-                   Component 3 
+                <NavLink to="child-parent-ref">
+                Child to Parent - Ref
                 </NavLink>
             </li>
             <li className='menu-item'>
                 <NavLink to="">
-                   Component 4 
+                Child to Parent - 
                 </NavLink>
             </li>
             <li className='menu-item'>
                 <NavLink to="">
-                   Component 5 
+                Child to Parent - 
                 </NavLink>
             </li>
         </ul>

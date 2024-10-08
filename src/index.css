@@ -2,3 +2,12 @@ input {
   padding: 1rem 0.5rem;
   width: 20rem;
 }
+.flex {
+  display: flex;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
