@@ -5,6 +5,7 @@ import StateParent from "./Component/ChildParentDataExchange/StateShifting/State
 import RefParent from "./Component/ChildParentDataExchange/Ref/RefParent.jsx";
 import EventParent from "./Component/ChildParentDataExchange/Events/EventParent.jsx";
 import ContextParent from "./Component/ChildParentDataExchange/ContextApi/ContextParent.jsx";
+import ReduxParent, { ReduxC2PWrapper } from "./Component/ChildParentDataExchange/Redux/ReduxParent.jsx";
 
 export const routes = createBrowserRouter([
   {
@@ -33,7 +34,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: "child-parent-redux",
-        Component: ContextParent,
+        Component: ReduxC2PWrapper,
       },
     ],
   },
