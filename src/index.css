@@ -1,6 +1,7 @@
 input {
   padding: 1rem 0.5rem;
   width: 20rem;
+  border-radius: 10px;
 }
 .flex {
   display: flex;
@@ -10,4 +11,10 @@ input {
 }
 .m-2 {
   margin: 2rem;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
 }

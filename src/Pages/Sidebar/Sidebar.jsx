@@ -28,8 +28,13 @@ const Sidebar = () => {
                 </NavLink>
             </li>
             <li className='menu-item'>
-                <NavLink to="">
-                Child to Parent - 
+                <NavLink to="child-parent-context">
+                Child to Parent - Context
+                </NavLink>
+            </li>
+            <li className='menu-item'>
+                <NavLink to="child-parent-redux">
+                Child to Parent - Redux
                 </NavLink>
             </li>
         </ul>

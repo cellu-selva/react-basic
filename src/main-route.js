@@ -4,6 +4,7 @@ import CbParent from "./Component/ChildParentDataExchange/callback/CbParent.jsx"
 import StateParent from "./Component/ChildParentDataExchange/StateShifting/StateParent.jsx";
 import RefParent from "./Component/ChildParentDataExchange/Ref/RefParent.jsx";
 import EventParent from "./Component/ChildParentDataExchange/Events/EventParent.jsx";
+import ContextParent from "./Component/ChildParentDataExchange/ContextApi/ContextParent.jsx";
 
 export const routes = createBrowserRouter([
   {
@@ -25,6 +26,14 @@ export const routes = createBrowserRouter([
       {
         path: "child-parent-event",
         Component: EventParent,
+      },
+      {
+        path: "child-parent-context",
+        Component: ContextParent,
+      },
+      {
+        path: "child-parent-redux",
+        Component: ContextParent,
       },
     ],
   },
