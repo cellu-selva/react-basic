@@ -8,13 +8,13 @@ const Sidebar = () => {
     <div className='side-bar'>
         <ul className='list'>
             <li className='menu-item'>
-                <NavLink to="child-parent-data">
-                    Child to Parent
+                <NavLink to="child-parent-cb">
+                    Child to Parent - Cb
                 </NavLink>
             </li>
             <li className='menu-item'>
-                <NavLink to="">
-                   Component 2 
+                <NavLink to="child-parent-ss">
+                Child to Parent - State Shifting
                 </NavLink>
             </li>
             <li className='menu-item'>
