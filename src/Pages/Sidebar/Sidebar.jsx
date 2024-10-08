@@ -23,8 +23,8 @@ const Sidebar = () => {
                 </NavLink>
             </li>
             <li className='menu-item'>
-                <NavLink to="">
-                Child to Parent - 
+                <NavLink to="child-parent-event">
+                Child to Parent - Event
                 </NavLink>
             </li>
             <li className='menu-item'>

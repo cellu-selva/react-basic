@@ -10,7 +10,7 @@ const Dashboard = () => {
         <Sidebar/>
       </div>
       <div className="dashboard-content">
-        Dashboard
+        {/* Dashboard */}
         <Outlet/>
       </div>
     </div>
