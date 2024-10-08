@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-import Parent from "./Component/ChildParentDataExchange/Parent";
+import CbParent from "./Component/ChildParentDataExchange/callback/CbParent.jsx";
 
 export const routes = createBrowserRouter([
     {
@@ -8,7 +8,7 @@ export const routes = createBrowserRouter([
         Component: Dashboard,
         children: [{
             path: 'child-parent-data',
-            Component: Parent
+            Component: CbParent
         }]
     }
 ])
