@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import RefChild from "./RefChild";
 
 function RefParent() {
@@ -15,8 +15,8 @@ function RefParent() {
       <div className="m-1">
         <h1>Parent Component</h1>
         <button onClick={handleClick}>Get Child Data</button>
-        <br/>
-        <br/>
+        <br />
+        <br />
         Data From Child - {data}
       </div>
       <div className="m-1">

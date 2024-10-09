@@ -1,12 +1,12 @@
 .side-bar-container {
-    max-width: 30%;
-    min-width: 240px;
-    min-height: 100vh;
-    background-color: #fff;
+  max-width: 30%;
+  min-width: 240px;
+  min-height: 100vh;
+  background-color: #fff;
 }
 .dashboard-container {
-    display: flex;
+  display: flex;
 }
 .dashboard-content {
-    padding: 1rem;
+  padding: 1rem;
 }

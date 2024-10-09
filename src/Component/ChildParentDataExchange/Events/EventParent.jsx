@@ -1,19 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import EventChild from './EventChild';
+import EventChild from "./EventChild";
 
-const EventParent = props => {
-  window.addEventListener('event-from-child', (event) => {
+const EventParent = () => {
+  window.addEventListener("event-from-child", (event) => {
     console.log(event.detail);
-  })
+  });
   return (
     <div>
-        EventParent
-    <EventChild></EventChild>
+      EventParent
+      <EventChild></EventChild>
     </div>
-  )
-}
+  );
+};
 
-EventParent.propTypes = {}
-
-export default EventParent
+export default EventParent;

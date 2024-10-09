@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import Dashboard from "./Pages/Dashboard/Dashboard";
 import CbParent from "./Component/ChildParentDataExchange/callback/CbParent.jsx";
-import StateParent from "./Component/ChildParentDataExchange/StateShifting/StateParent.jsx";
-import RefParent from "./Component/ChildParentDataExchange/Ref/RefParent.jsx";
-import EventParent from "./Component/ChildParentDataExchange/Events/EventParent.jsx";
 import ContextParent from "./Component/ChildParentDataExchange/ContextApi/ContextParent.jsx";
-import ReduxParent, { ReduxC2PWrapper } from "./Component/ChildParentDataExchange/Redux/ReduxParent.jsx";
+import EventParent from "./Component/ChildParentDataExchange/Events/EventParent.jsx";
+import { ReduxC2PWrapper } from "./Component/ChildParentDataExchange/Redux/ReduxParent.jsx";
+import RefParent from "./Component/ChildParentDataExchange/Ref/RefParent.jsx";
+import StateParent from "./Component/ChildParentDataExchange/StateShifting/StateParent.jsx";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 export const routes = createBrowserRouter([
   {

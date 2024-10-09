@@ -1,23 +1,22 @@
-import React, { useRef } from 'react'
-import PropTypes from 'prop-types'
+import { useRef } from "react";
 
-const StateChild = props => {
-  const {setParentName} = props
+const StateChild = (props) => {
+  const { setParentName } = props;
   const inputRef = useRef();
-  const handleOnClick = (e) => {
+  const handleOnClick = () => {
     setParentName(inputRef.current.value);
-  }
-    return (
+  };
+  return (
     <div>
       StateChild
-      <input type="text" ref={inputRef}/>
+      <input type="text" ref={inputRef} />
       <button onClick={handleOnClick}>Update Name</button>
     </div>
-  )
-}
+  );
+};
 
 StateChild.propTypes = {
-  setParentName: () => {}
-}
+  setParentName: () => {},
+};
 
-export default StateChild
+export default StateChild;

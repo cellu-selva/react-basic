@@ -1,20 +1,19 @@
-import React from 'react'
-import './Dashboard.css';
-import { Outlet } from 'react-router-dom';
-import Sidebar from '../Sidebar/Sidebar';
+import { Outlet } from "react-router-dom";
+import Sidebar from "../Sidebar/Sidebar";
+import "./Dashboard.css";
 
 const Dashboard = () => {
   return (
-    <div className='dashboard-container'>
+    <div className="dashboard-container">
       <div className="side-bar-container">
-        <Sidebar/>
+        <Sidebar />
       </div>
       <div className="dashboard-content">
         {/* Dashboard */}
-        <Outlet/>
+        <Outlet />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;
