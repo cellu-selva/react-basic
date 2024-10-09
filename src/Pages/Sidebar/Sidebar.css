@@ -4,3 +4,14 @@
 .side-bar > .list > .menu-item {
   padding: 1rem 0.5rem;
 }
+.menu-item > a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-item:hover > a {
+  color: #000;
+}
+
+.side-bar > .list > .menu-item:hover {
+  background-color: #667a8a;
+}

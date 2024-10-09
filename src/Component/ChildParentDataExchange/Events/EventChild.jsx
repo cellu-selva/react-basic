@@ -1,12 +1,21 @@
+import { useState } from "react";
+
 const EventChild = () => {
+  const [data, setData] = useState("Default value");
   return (
-    <div>
-      EventChild
+    <div className="mb-1">
+      <h2>Child Component</h2>
+      <input
+        type="text"
+        onChange={(e) => {
+          setData(e.target.value);
+        }}
+      ></input>
       <button
         type="button"
         onClick={() => {
           const event = new CustomEvent("event-from-child", {
-            detail: "selva",
+            detail: data,
           });
           window.dispatchEvent(event);
         }}

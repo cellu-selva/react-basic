@@ -6,7 +6,7 @@ const ReduxParent = () => {
   const name = useSelector((state) => state.C2P.name);
   return (
     <div>
-      Redux Parent - {name}
+      <h2>Redux Parent - {name}</h2>
       <ReduxChild />
     </div>
   );

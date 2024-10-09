@@ -7,10 +7,12 @@ const ContextParent = () => {
   return (
     <div className="flex w-100">
       <div className="w-50">
-        Name from Context provider -
-        <i>
-          <b>{name}</b>
-        </i>
+        <h2>
+          Name from Context provider -{" "}
+          <i>
+            <b>{name}</b>
+          </i>
+        </h2>
       </div>
       <div className="w-50">
         <ContextChild />
@@ -23,7 +25,9 @@ const ContextParentWrapper = () => {
   const [name, setName] = useState();
   return (
     <div>
-      Context Parent
+      <h2>
+        <u>Passing data from Child to Parent using Context API:</u>
+      </h2>
       <C2PProvider.Provider value={{ name, setName }}>
         <ContextParent />
       </C2PProvider.Provider>

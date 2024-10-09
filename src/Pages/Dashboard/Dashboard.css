@@ -2,11 +2,13 @@
   max-width: 30%;
   min-width: 240px;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #031c30;
 }
 .dashboard-container {
   display: flex;
 }
 .dashboard-content {
   padding: 1rem;
+  background-color: #c7d0d8;
+  width: calc(100% - 240px);
 }

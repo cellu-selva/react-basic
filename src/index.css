@@ -1,7 +1,23 @@
+body {
+  margin: 0;
+}
+
 input {
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   width: 20rem;
   border-radius: 10px;
+  border: none;
+  outline: none;
+}
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  outline: none;
+  border: none;
+}
+button:hover {
+  transform: scale(1.1);
 }
 .flex {
   display: flex;
@@ -12,9 +28,21 @@ input {
 .m-2 {
   margin: 2rem;
 }
+.mb-1 {
+  margin-bottom: 1rem;
+}
 .w-100 {
   width: 100%;
 }
 .w-50 {
   width: 50%;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.pb-1 {
+  padding-bottom: 1rem;
 }

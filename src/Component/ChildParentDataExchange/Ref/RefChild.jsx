@@ -4,7 +4,9 @@ const RefChild = (_props, ref) => {
   const [name, setName] = useState("");
 
   const getTitleFromChild = () => {
-    return name;
+    var resp = name;
+    setName("");
+    return resp;
   };
 
   useImperativeHandle(ref, () => ({
@@ -12,10 +14,11 @@ const RefChild = (_props, ref) => {
   }));
 
   return (
-    <div>
-      <h2>Child Component</h2>
+    <div className="p-2">
+      <h2 className="pb-1">Child Component</h2>
       <input
         type="text"
+        value={name}
         onChange={(e) => {
           setName(e.target.value);
         }}

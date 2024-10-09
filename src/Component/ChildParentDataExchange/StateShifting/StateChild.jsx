@@ -5,10 +5,11 @@ const StateChild = (props) => {
   const inputRef = useRef();
   const handleOnClick = () => {
     setParentName(inputRef.current.value);
+    inputRef.current.value = "";
   };
   return (
-    <div>
-      StateChild
+    <div className="m-2">
+      <div className="mb-1">Passing props from Child to parent</div>
       <input type="text" ref={inputRef} />
       <button onClick={handleOnClick}>Update Name</button>
     </div>

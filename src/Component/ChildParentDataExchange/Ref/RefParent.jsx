@@ -12,14 +12,15 @@ function RefParent() {
 
   return (
     <div className="flex">
-      <div className="m-1">
-        <h1>Parent Component</h1>
+      <div className="p-2">
+        <h2 className="pb-1">Parent Component</h2>
         <button onClick={handleClick}>Get Child Data</button>
-        <br />
-        <br />
-        Data From Child - {data}
+        <h5>Data From Child: </h5>{" "}
+        <h3>
+          <i>{data}</i>
+        </h3>
       </div>
-      <div className="m-1">
+      <div className="">
         <RefChild ref={childRef} />
       </div>
     </div>

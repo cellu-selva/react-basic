@@ -4,10 +4,11 @@ import { C2PProvider } from "../../../Provider/C2PProvider";
 const ContextChild = () => {
   const { name, setName } = useContext(C2PProvider);
   return (
-    <div>
-      Name from the context -
+    <div className="m-2">
       <i>
-        <b>{name}</b>
+        <h2>
+          Name from the context - <b>{name}</b>
+        </h2>
       </i>
       <input
         type="text"

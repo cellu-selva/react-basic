@@ -5,12 +5,39 @@ import EventParent from "./Component/ChildParentDataExchange/Events/EventParent.
 import { ReduxC2PWrapper } from "./Component/ChildParentDataExchange/Redux/ReduxParent.jsx";
 import RefParent from "./Component/ChildParentDataExchange/Ref/RefParent.jsx";
 import StateParent from "./Component/ChildParentDataExchange/StateShifting/StateParent.jsx";
-import Dashboard from "./Pages/Dashboard/Dashboard";
+import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
+
+const C2PRouteMenu = [
+  {
+    to: "child-parent-cb",
+    name: "Child to Parent - Cb",
+  },
+  {
+    to: "child-parent-ss",
+    name: "to Parent - State Shifting",
+  },
+  {
+    to: "child-parent-ref",
+    name: "Child to Parent - Ref",
+  },
+  {
+    to: "child-parent-event",
+    name: "Child to Parent - Event",
+  },
+  {
+    to: "child-parent-context",
+    name: "Child to Parent - Context",
+  },
+  {
+    to: "child-parent-redux",
+    name: "Child to Parent - Redux",
+  },
+];
 
 export const routes = createBrowserRouter([
   {
     path: "/",
-    Component: Dashboard,
+    element: <Dashboard menus={C2PRouteMenu} />,
     children: [
       {
         path: "child-parent-cb",

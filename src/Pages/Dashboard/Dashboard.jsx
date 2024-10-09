@@ -2,11 +2,11 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
 import "./Dashboard.css";
 
-const Dashboard = () => {
+const Dashboard = ({ menus }) => {
   return (
     <div className="dashboard-container">
       <div className="side-bar-container">
-        <Sidebar />
+        <Sidebar menus={menus} />
       </div>
       <div className="dashboard-content">
         {/* Dashboard */}

@@ -5,7 +5,9 @@ const StateParent = () => {
   const [parentName, setParentName] = useState("Parent");
   return (
     <div>
-      Title - {parentName}
+      <h3>
+        Title - <i>{parentName}</i>
+      </h3>
       <StateChild setParentName={setParentName} />
     </div>
   );
